@@ -89,8 +89,6 @@ class DetailViewController: UITableViewController{
         }
     }
     
-    
-    
 //request
     func request(){
         let parameters = ["postId": "\(postSelected)"]
@@ -115,7 +113,7 @@ class DetailViewController: UITableViewController{
         }
     }
     
-//BOTON de añadir comentario 
+//BOTON de añadir comentario
     func addButton(){
         let alert = UIAlertController(title: "Comenta", message: "Estas logueado como: YO", preferredStyle: .alert)
             alert.addTextField { (textField) in
