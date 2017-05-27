@@ -69,16 +69,16 @@
 		57CC7C011ED443F9000CCCBE /* TestC */ = {
 			isa = PBXGroup;
 			children = (
+				57CC7C181ED45232000CCCBE /* CellPosts.swift */,
+				5766A01C1ED4A09B007D5BCF /* ClassComments.swift */,
+				5766A01A1ED49F73007D5BCF /* ClassPosts.swift */,
 				57CC7C021ED443F9000CCCBE /* AppDelegate.swift */,
 				57CC7C041ED443F9000CCCBE /* MasterViewController.swift */,
 				57CC7C061ED443F9000CCCBE /* DetailViewController.swift */,
-				57CC7C181ED45232000CCCBE /* CellPosts.swift */,
 				57CC7C081ED443F9000CCCBE /* Main.storyboard */,
 				57CC7C0B1ED443F9000CCCBE /* Assets.xcassets */,
 				57CC7C0D1ED443F9000CCCBE /* LaunchScreen.storyboard */,
 				57CC7C101ED443F9000CCCBE /* Info.plist */,
-				5766A01A1ED49F73007D5BCF /* ClassPosts.swift */,
-				5766A01C1ED4A09B007D5BCF /* ClassComments.swift */,
 			);
 			path = TestC;
 			sourceTree = "<group>";
