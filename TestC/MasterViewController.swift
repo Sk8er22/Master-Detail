@@ -68,7 +68,7 @@ class MasterViewController: UITableViewController {
         return cell
     }
     
-// REQUEST WEB - se podria mejorar varibale la url...
+// REQUEST WEB -
     func request(){
         Alamofire.request("https://jsonplaceholder.typicode.com/posts") .responseJSON { response in
             switch response.result {

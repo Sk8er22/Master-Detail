@@ -69,8 +69,8 @@
 		57CC7C011ED443F9000CCCBE /* TestC */ = {
 			isa = PBXGroup;
 			children = (
-				57CC7C181ED45232000CCCBE /* CellPosts.swift */,
 				5766A01A1ED49F73007D5BCF /* ClassPosts.swift */,
+				57CC7C181ED45232000CCCBE /* CellPosts.swift */,
 				5766A01C1ED4A09B007D5BCF /* ClassComments.swift */,
 				57CC7C021ED443F9000CCCBE /* AppDelegate.swift */,
 				57CC7C041ED443F9000CCCBE /* MasterViewController.swift */,
