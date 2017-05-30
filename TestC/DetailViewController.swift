@@ -91,8 +91,8 @@ class DetailViewController: UITableViewController{
     
     override func tableView(_ tableView: UITableView, willDisplay cell:
         UITableViewCell, forRowAt indexPath: IndexPath) {
-        let rotationAngleInRadians = 360.0 * CGFloat(M_PI/360.0)
-        let rotationTransform = CATransform3DMakeRotation(rotationAngleInRadians, -500, 100, 0)
+        let rotationAngleInRadians = 120.0 * CGFloat(M_PI/360.0)
+        let rotationTransform = CATransform3DMakeRotation(rotationAngleInRadians, -200, 100, 0)
         _ = CATransform3DMakeRotation(rotationAngleInRadians, 0, 0, 0)
         cell.layer.transform = rotationTransform
         UIView.animate(withDuration: 0.3, animations: {cell.layer.transform = CATransform3DIdentity})
@@ -115,7 +115,6 @@ class DetailViewController: UITableViewController{
     
     //request
     func request(){
-        
         let parameters = ["postId": "\(postSelected)"]
         Alamofire.request("https://jsonplaceholder.typicode.com/comments", parameters: parameters) .responseJSON { response in
             switch response.result {
@@ -133,9 +132,6 @@ class DetailViewController: UITableViewController{
             case .failure(let error):
                 print(error)
             }
-        }
-        DispatchQueue.main.async() {
-            self.tableView.reloadData()
         }
     }
     
