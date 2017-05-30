@@ -10,4 +10,5 @@ En este proyecto se utiliza: COCOAPOADS, SWIFTYJSON y ALAMOFIRE
 5. Se genera un request dinamico a la API, dependiendo que objeto se haya seleccionado de el Master.
 6. Se pueden añadir commentarios desde la barra del navegador.
 7. Tambien hay pequeños arreglos visuales como: stacks / en Master se intente reducir un 50% el tamaño de la letra para que quepa el titulo, pero me habria gustado dedicarle más tiempo a estos aspectos a pesar de no ser solicitados. 
-edit: +1 animación, autolayout y colores
+edit:  
++1 animación, autolayout y colores
