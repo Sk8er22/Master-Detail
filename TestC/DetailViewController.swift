@@ -29,7 +29,6 @@ class DetailViewController: UITableViewController{
         navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
-        self.request()
     }
     
     override func didReceiveMemoryWarning() {
@@ -89,14 +88,7 @@ class DetailViewController: UITableViewController{
         }
     }
     
-    override func tableView(_ tableView: UITableView, willDisplay cell:
-        UITableViewCell, forRowAt indexPath: IndexPath) {
-        let rotationAngleInRadians = 120.0 * CGFloat(M_PI/360.0)
-        let rotationTransform = CATransform3DMakeRotation(rotationAngleInRadians, -200, 100, 0)
-        _ = CATransform3DMakeRotation(rotationAngleInRadians, 0, 0, 0)
-        cell.layer.transform = rotationTransform
-        UIView.animate(withDuration: 0.3, animations: {cell.layer.transform = CATransform3DIdentity})
-    }
+    
     
     //Detail
     var detailItem: NSDate? {
@@ -124,10 +116,12 @@ class DetailViewController: UITableViewController{
                     let comment = ClassComments(dictionary: json[i].dictionaryObject! as [String : AnyObject])
                     self.comments.append(comment)
                 }
-                DispatchQueue.main.async() {
+                OperationQueue.main.addOperation {
+                    self.tableView.reloadData()
+                    //Para cargar la primera celda correctamente
                     self.tableView.setNeedsLayout()
                     self.tableView.layoutIfNeeded()
-                    self.tableView.reloadData()
+                    UIView.transition(with: self.tableView, duration: 0.4, options: .transitionCrossDissolve, animations: {self.tableView.reloadData()}, completion: nil)
                 }
             case .failure(let error):
                 print(error)

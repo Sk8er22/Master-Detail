@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TestC/MasterViewController.swift"
-            timestampString = "517808509.815264"
+            timestampString = "517847744.839504"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "104"
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TestC/DetailViewController.swift"
-            timestampString = "517809034.619786"
+            timestampString = "517848176.123245"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "configureView()"
             landmarkType = "7">
             <Locations>

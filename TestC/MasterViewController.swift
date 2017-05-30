@@ -90,8 +90,8 @@ class MasterViewController: UITableViewController {
                     let post = ClassPosts(dictionary: json[i].dictionaryObject! as [String : AnyObject])
                     self.posts.append(post)
                 }
-                DispatchQueue.main.async() {
-                    UIView.transition(with: self.tableView, duration: 1.0, options: .transitionCurlDown, animations: {self.tableView.reloadData()}, completion: nil)
+                OperationQueue.main.addOperation {
+                    UIView.transition(with: self.tableView, duration: 0.30, options: .transitionCurlDown, animations: {self.tableView.reloadData()}, completion: nil)
                     //Para cargar la primera celda correctamente
                     self.tableView.setNeedsLayout()
                     self.tableView.layoutIfNeeded()

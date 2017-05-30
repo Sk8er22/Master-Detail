@@ -34,11 +34,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TestC/DetailViewController.swift"
-            timestampString = "517809034.619786"
+            timestampString = "517848176.123245"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "numberOfSections(in:)"
             landmarkType = "7">
          </BreakpointContent>
